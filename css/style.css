@@ -1592,25 +1592,6 @@ padding: 0.5em 0;
 	border-bottom: 2px solid #999999;
 	padding: 0px 0 5px 0;
 }
-.conatact-bottom input[type="text"],.conatact-bottom textarea {
-	padding:12px;
-	width: 50%;
-	margin:1% 2% 0 0;
-	background:#ff9901;
-	outline: none;
-	color: rgba(255, 255, 255, 0.61);
-	border:none;
-	-webkit-appearance: none;
-	font-size: 15px;
-}
-.conatact-bottom input[type="text"]:nth-child(2)
-{
-	margin-right: 0em;
-}
-.conatact-bottom form textarea{
-	resize:none;
-	height:140px;		
-}
 .submit{
 	margin: 1% 0;
 }
@@ -1626,70 +1607,37 @@ text-transform: uppercase;
 	margin: 1em 1em 0.5em 0em;
 	font-size: 2em;
 }
-.conatact-bottom input[type="submit"]{
-	font-family: 'Lato', sans-serif;
-	background:#ff9901;
-	color: #fff;
-	font-weight: 500;
-	padding: 0.6em 0.6em;
-	display: inline-block;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	letter-spacing: 0.1em;
-	 border:double#ff9901;
-	outline: none;
-	cursor: pointer;
-	font-size: 1em;
-	text-transform: uppercase;
-	width:30%;
+ul.bottom-icons{
+	margin-top: 10px;
+  word-spacing: 1px;
+  border-width: 100px;
 }
-.conatact-bottom input[type="submit"]:hover{
-	 border:double#fff;
-	 color: #fff;
-}
-ul.bottom-icons,ul.bottom-icons.two {
+ul.bottom-icons.two{
 	padding: 0;
+	margin-top: 10px;
+	margin-right: -200px;
 }
-ul.bottom-icons li,ul.bottom-icons.two li{
-	display: block;
+ul.bottom-icons li{
+	display: inline;
+	width:1000px;
 	margin-left:0px;
-	list-style: none;
+	list-style-type: none;
 }
 
 ul.bottom-icons.two li a span{
 	width:32px;
 	height:32px;
+	float: right;
 	display: inline-block;
 	background: url('../images/footer.png') no-repeat;
-	vertical-align: middle;
 	-webkit-transition: all 0.3s ease;
 			-moz-transition: all 0.3s ease;
 			-o-transition: all 0.3s ease;
 			transition: all 0.3s ease;
-			margin: 0 16px;
+			margin: 0 2px;
 }
 ul.bottom-icons li a span{
-	width:32px;
-	height:25px;
-	display: inline-block;
-	background: url('../images/icons.png') no-repeat;
-	vertical-align: middle;
-	-webkit-transition: all 0.3s ease;
-			-moz-transition: all 0.3s ease;
-			-o-transition: all 0.3s ease;
-			transition: all 0.3s ease;
-			margin: 0 12px;
-}
-ul.bottom-icons  li a.home span{
-	background-position: 0px -119px;
-}
-ul.bottom-icons li a.mail span{
-	background-position: 0px -179px;
-}
-ul.bottom-icons li a.mbl span{
-	background-position: 0px -219px;
+	display: inline;
 }
 ul.bottom-icons.two  li a.fbook span{
 	background-position: -0px -0px;
@@ -1701,20 +1649,13 @@ ul.bottom-icons.two li a.iin span{
 	background-position: -0px -64px;
 }
  .bottom-icons li a,.bottom-icons.two li a,.bottom-icons li,.bottom-icons.two li {
-	font-weight: 330;
+	font-weight: 350;
 	font-size: 1em;
 	text-decoration: none;
 	color: #fff;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-}
-.bottom-icons li a:hover,ul.bottom-icons li a span:hover{
- 	opacity: 0.8;
 }
 .bottom-icons.two li a {
-	line-height: 1.0em;
+	line-height: 3.0em;
 }
 .product-head li a {
 color: #ff5a5f;
