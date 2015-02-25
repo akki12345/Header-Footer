@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 ul.social-in li{
 	display: inline-block;
-	margin-top: 2px;	
+	margin-top: 38px;	
 }
 ul.social-in li span{
 	color:#838383;
@@ -78,7 +78,7 @@ ul.social-in li  i.youtube:hover{
 }
 .top-nav{
 	float:left;
-	margin-top: 0.5px;
+	margin-top: 20px;
 }
 
 
@@ -96,16 +96,35 @@ ul.social-in li  i.youtube:hover{
 	letter-spacing: 2px;
 	font-size: 1.0em;
 }
-.top-nav ul li a::before {
-	
+.top-nav ul li a:hover {
+	color :#3e3e3e;
 }
-.top-nav ul li a:hover::before,
+.top-nav ul li a:hover::before {
+	color: #440e62;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	max-width: 0;
+	content: attr(data-hover);
+
+	transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	-webkit-transition: max-width 0.5s;
+}
+
+.top-nav a:hover::before,
+.top-nav a:focus::before {
+	max-width: 100%;
+}
+/*.top-nav ul li a:hover::before,
 .top-nav ul li a:focus::before {
 	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
-}
+}*/
 .top-nav ul li.active a {
 	color:#000;
 }
