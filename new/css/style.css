@@ -38,12 +38,12 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 ul.social-in li{
 	display: inline-block;
-	margin-top: 38px;	
+	margin-top: 53px;	
 }
 
 ul.social-in li span{
 	color:#838383;
-	font-size:1.2em;
+	font-size:1.7em;
 }
 ul.social-in li  i{
 	background: url(../images/img-sprite.png)no-repeat -12px -6px;
@@ -79,7 +79,7 @@ ul.social-in li  i.youtube:hover{
 }
 .top-nav{
 	float:left;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 
@@ -94,26 +94,20 @@ ul.social-in li  i.youtube:hover{
 	outline: none;
 	color: #000;
 	text-decoration: none;
-	letter-spacing: 2px;
-	font-size: 1.0em;
+	letter-spacing: 1.5px;
+	font-size: 1.3em;
 }
 .top-nav ul li a:hover {
-    background-color: #297ACC;
+    background-color: #Bcbcbc;
     position: relative;
     color:#fff;
     padding: 10px;
 }
 .top-nav ul li a:active{
-	  background-color: #297ACC;
+	  background-color: #Bcbcbc;
 	  color:#fff;
 }
-/*.top-nav ul li a:hover::before,
-.top-nav ul li a:focus::before {
-	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-	opacity: 1;
-}*/
+
 .top-nav ul li.active a {
 	color:#000;
 }
