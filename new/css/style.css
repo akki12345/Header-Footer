@@ -40,6 +40,7 @@ ul.social-in li{
 	display: inline-block;
 	margin-top: 38px;	
 }
+
 ul.social-in li span{
 	color:#838383;
 	font-size:1.2em;
@@ -91,32 +92,20 @@ ul.social-in li  i.youtube:hover{
 	display: inline-block;
 	margin: 0 2em 0 0;
 	outline: none;
-	color: #838383;
+	color: #000;
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-size: 1.0em;
 }
 .top-nav ul li a:hover {
-	color :#3e3e3e;
+    background-color: #297ACC;
+    position: relative;
+    color:#fff;
+    padding: 10px;
 }
-.top-nav ul li a:hover::before {
-	color: #440e62;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	max-width: 0;
-	content: attr(data-hover);
-
-	transition: max-width 0.5s;
-	-moz-transition: max-width 0.5s;
-	-webkit-transition: max-width 0.5s;
-}
-
-.top-nav a:hover::before,
-.top-nav a:focus::before {
-	max-width: 100%;
+.top-nav ul li a:active{
+	  background-color: #297ACC;
+	  color:#fff;
 }
 /*.top-nav ul li a:hover::before,
 .top-nav ul li a:focus::before {

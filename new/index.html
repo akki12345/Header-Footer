@@ -24,9 +24,7 @@ footer .copyright {
   margin-top: 50px;
   letter-spacing: -0.5px;
 }
-footer .h-underline {
-  text-transform: uppercase;
-}
+
 .f-list {
 	float: right;
 	text-decoration: none;
@@ -47,6 +45,70 @@ footer .h-underline {
 .f-list li.current a {
   color: #3e3e3e;
 }
+
+/* Tooltip*/
+[data-tooltip] {
+	position: relative;
+	
+	cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-bottom: 20px;
+	margin-left: -80px;
+	padding: 7px;
+	width: 130px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border-radius:         3px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	content: attr(data-tooltip);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 20px solid #000;
+	border-top: 20px solid hsla(0, 0%, 1%, 0.6);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+
 </style>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
@@ -80,9 +142,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="header-top-on">
 				<ul class="social-in">
-					<li><a href="#"><i> </i></a></li>						
-					<li><a href="#"><i class="tin"> </i></a></li>
-					<li><a href="#"><i class="message"> </i></a></li>
+					<li><a href="#" data-tooltip="Like On Facebook"><i> </i></a></li>						
+					<li><a href="#" data-tooltip="Share On Twitter"><i class="tin"> </i></a></li>
+					<li><a href="#" data-tooltip="Google+"><i class="message"> </i></a></li>
 				</ul>
 			</div>
 
@@ -92,14 +154,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="top-nav">
 					<span class="menu"> </span>
 					<ul>
-                   
-						<li class="active" data-hover="HOME" ><a href="index.html" >HOME  </a> </li>
+                      
+						<li class="active" data-hover="HOME" ><a href="index.html">HOME </a> </li>
 						<li><a href="#" data-hover="ABOUT US" >ABOUT US</a></li>
 						<li><a href="#" data-hover="CONTRIBUTE | WHY NOT?"> CONTRIBUTE | WHY NOT?</a></li>
 						<li><a href="contact.html" data-hover="HIGHLIGHT OF TODAY"> HIGHLIGHT OF TODAY</a></li>
-						<li><a href="contact.html" data-hover="CONTACT US ">CONTACT US </a></li>
-						
-				
+						<li><a href="contact.html" data-hover="CONTACT US ">CONTACT US</a></li>
+					
 					</ul>
 					<!--script-->
 				<script>
