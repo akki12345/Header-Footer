@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 ul.social-in li{
 	display: inline-block;
-	margin-top: 53px;	
+	margin-top: 56px;	
 }
 
 ul.social-in li span{
@@ -79,7 +79,7 @@ ul.social-in li  i.youtube:hover{
 }
 .top-nav{
 	float:left;
-	margin-top: 40px;
+	margin-top: 44px;
 }
 
 
@@ -90,18 +90,16 @@ ul.social-in li  i.youtube:hover{
 .top-nav ul li a {
 	position: relative;
 	display: inline-block;
-	margin: 0 2em 0 0;
+	margin: 0 1.8em 0 0;
 	outline: none;
-	color: #000;
+	color: #9c9c9c;
 	text-decoration: none;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.4px;
 	font-size: 1.3em;
 }
 .top-nav ul li a:hover {
-    background-color: #Bcbcbc;
     position: relative;
-    color:#fff;
-    padding: 10px;
+    color:#000;
 }
 .top-nav ul li a:active{
 	  background-color: #Bcbcbc;
