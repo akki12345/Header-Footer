@@ -23,7 +23,8 @@ h1,h2,h3,h4,h5,h6,label,p{
 	margin:0;	
 }
 .header {
-	border-bottom:3px solid #6d6d6d;
+	border-bottom:3px solid #838383;
+
 	margin-top: -20px;
 }
 .logo {
@@ -90,11 +91,11 @@ ul.social-in li  i.youtube:hover{
 .top-nav ul li a {
 	position: relative;
 	display: inline-block;
-	margin: 0 1.8em 0 0;
+	margin: 56px 1.8em 0 0;
 	outline: none;
 	color: #9c9c9c;
 	text-decoration: none;
-	letter-spacing: 1.4px;
+	letter-spacing: 0px;
 	font-size: 1.3em;
 }
 .top-nav ul li a:hover {
