@@ -116,6 +116,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//fonts-->
  <script type="text/javascript" src="js/move-top.js"></script>
  <script type="text/javascript" src="js/easing.js"></script>
+
+
 				<script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
@@ -137,6 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!--header-->
 	<div class="container">
+		<header>
 		<div class="header">
 			<div class="header-top">
 				<div class="logo">
@@ -152,4 +155,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 
+
+          
+			<div class="header-bottom">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+                      
+						<li class="active" data-hover="Home" ><a href="index.html">Home </a> </li>
+						<li><a href="#" data-hover="About Us" >About Us</a></li>
+						<li><a href="#" data-hover="Contribute | Why Not?"> Contribute | Why Not?</a></li>
+						<li><a href="contact.html" data-hover="Highlight Of Today"> Highlight Of Today</a></li>
+						<li><a href="contact.html" data-hover="Contact Us ">Contact Us</a></li>
+					
+					</ul>
+					<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+		</header>
+	</div> 
+		<script>
+    
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
 			<!---->

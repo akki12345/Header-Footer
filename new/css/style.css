@@ -26,7 +26,14 @@ h1,h2,h3,h4,h5,h6,label,p{
 	border-bottom:3px solid #838383;
 
 	margin-top: -20px;
-}
+} header.sticky {
+            font-size: 24px;
+            line-height: 48px;
+            height: 48px; 
+            background: #efc47D;
+            text-align: left;
+            padding-left: 20px;
+        }
 .logo {
 	float:left;
 }
@@ -89,7 +96,7 @@ ul.social-in li  i.youtube:hover{
 	display: inline-block;
 }
 .top-nav ul li a {
-	position: relative;
+	position:relative;
 	display: inline-block;
 	margin: 56px 1.8em 0 0;
 	outline: none;
